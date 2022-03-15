@@ -23,7 +23,6 @@ public class Server
                 System.out.println(in.readUTF());
                 DataOutputStream out = new DataOutputStream(server.getOutputStream());
                 out.writeUTF("Thank you for connecting to: " + server.getLocalSocketAddress() + "Goodbye! /n");
-                server.close();
             }
             catch (SocketTimeoutException s)
             {
